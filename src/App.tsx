@@ -1,13 +1,14 @@
 function App() {
   const projects = [
     {
-      title: "NCDVTV",
-      description: "Coming soon...",
-      status: "soon",
-      tech: ["Java", "Spring Boot"]
+      title: "NCIPTV",
+      description: "A multi-platform IPTV player built with Flutter for seamless streaming across devices.",
+      status: "live",
+      link: "https://nciptv.ncdv.pl",
+      tech: ["Flutter", "Dart"]
     },
     {
-      title: "jobs.ncdv.pl",
+      title: "-",
       description: "Coming soon...",
       status: "soon",
       tech: ["React", "TypeScript"]
@@ -103,11 +104,16 @@ function App() {
                       Soon
                     </span>
                   )}
+                  {project.status === "live" && (
+                    <span className="px-3 py-1 bg-green-600/20 text-green-300 text-xs font-medium rounded-full border border-green-600/30">
+                      Live
+                    </span>
+                  )}
                 </div>
 
                 <p className="text-gray-400 mb-4">{project.description}</p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
@@ -117,6 +123,17 @@ function App() {
                     </span>
                   ))}
                 </div>
+
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-purple-300 hover:text-pink-300 text-sm font-medium transition"
+                  >
+                    Visit Project →
+                  </a>
+                )}
               </div>
             ))}
           </div>
