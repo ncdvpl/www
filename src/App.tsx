@@ -1,7 +1,7 @@
 function App() {
   const projects = [
     {
-      title: "NCIPTV",
+      title: "NC IPTV",
       description: "A multi-platform IPTV player built with Flutter for seamless streaming across devices.",
       status: "live",
       link: "https://nciptv.ncdv.pl",
