@@ -45,10 +45,10 @@ function App() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed">
-            A student group of senior Java developers without German.
+            A collaborative student development group specializing in modern technologies.
           </p>
           <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-12">
-            Building real solutions with honest code. No hype, just quality.
+            Delivering professional software solutions through teamwork and technical excellence.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
